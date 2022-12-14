@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Ball</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(220, 231, 14);
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed text-white text-sm ml-2 mt-1 select-none">
+        <span>Score : </span>
+        <span id="scoreEl">0</span>
+    </div>
+    <div class="fixed inset-0  flex items-center justify-center select-none" id="modalEl">
+        <div class="max-w-md w-full p-6 text-center" style="background-color: rgb(8, 174, 235); border: 1px rgb(8, 174, 235) solid; border-radius: 50px;" >
+            <h1 class="text-4xl font-bold text-purple-700" id="bigScore">0</h1>
+            <p class=" text-black-700 mb-4">Points</p>
+            <div style=" margin-top: 2px;">
+                <button class="bg-green-200  t-full py-3 rounded-full" style=" width: 200px; font-size: large; font-weight: 600; color: rgb(95, 55, 0);" id="startBtn">Start Game</button>
+                
+                <a href="../home.html">
+                    <button class="bg-green-200  t-full py-3 rounded-full" style="margin-top: 1rem; width: 200px; font-size: large; font-weight: 600; color: rgb(95, 55, 0);">
+                        Home
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <canvas></canvas> 
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

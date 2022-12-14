@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Readex Pro', sans-serif;
+    }
+}
+
+@layer components{
+    .card {
+       @apply
+       bg-neutral-800 text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden mx-[1.5rem] mt-30
+    }
+    .badge{
+        @apply
+        px-3 py-1 rounded-full text-xs bg-gray-200 shadow-slate-900 text-sm
+    }
+    .game-name{
+        @apply
+        font-semibold text-2xl overflow-ellipsis overflow-hidden whitespace-nowrap text-white
+    }
+    .play-button{
+        @apply
+        bg-yellow-400 hover:bg-yellow-600 px-6 py-2 rounded-md text-white font-bold text-2xl tracking-wider transition w-full
+    }
+}
